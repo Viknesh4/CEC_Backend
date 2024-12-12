@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CEC_CRM.props" />
+</Project>

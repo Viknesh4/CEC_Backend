@@ -1,0 +1,6 @@
+@CEC_CRM_HostAddress = http://localhost:5145
+
+GET {{CEC_CRM_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
