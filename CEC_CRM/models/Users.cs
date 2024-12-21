@@ -14,12 +14,9 @@ namespace CEC_CRM.models
         [EmailAddress]
         public string email { get; set; }
 
-        [Required]
-        [MinLength(8)]
-        public string password { get; set; }
+
+        public string? password { get; set; }
 
         public long? phone_number { get; set; }
-        
-        
     }
 }

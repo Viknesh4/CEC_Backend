@@ -79,6 +79,53 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CEC_CRM.Controllers.DiscussionsController",
+    "Method": "GetDiscussions",
+    "RelativePath": "api/Discussions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CEC_CRM.Controllers.DiscussionsController",
+    "Method": "AddDiscussion",
+    "RelativePath": "api/Discussions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "discussion",
+        "Type": "CEC_CRM.Data.Discussion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CEC_CRM.Controllers.DiscussionsController",
+    "Method": "AddReply",
+    "RelativePath": "api/Discussions/{discussionId}/reply",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "discussionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reply",
+        "Type": "CEC_CRM.Data.Reply",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CEC_CRM.Controllers.EmailController",
     "Method": "SendEmail",
     "RelativePath": "api/Email/send",
@@ -111,6 +158,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CEC_CRM.Controllers.OrderController",
+    "Method": "GetOrderDetailsByOID",
+    "RelativePath": "api/Order/Getod/{order_id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "order_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CEC_CRM.Controllers.SuggestionController",
     "Method": "GetAllSuggestion",
     "RelativePath": "api/Suggestion",
@@ -131,6 +194,43 @@
       {
         "Name": "suggestion",
         "Type": "CEC_CRM.models.Suggestion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CEC_CRM.Controllers.SuggestionController",
+    "Method": "EditUser",
+    "RelativePath": "api/Suggestion/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedsuggestion",
+        "Type": "CEC_CRM.models.Suggestion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CEC_CRM.Controllers.SuggestionController",
+    "Method": "deleteSuggestion",
+    "RelativePath": "api/Suggestion/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -170,6 +270,43 @@
   },
   {
     "ContainingType": "CEC_CRM.Controllers.TicketController",
+    "Method": "EditTicket",
+    "RelativePath": "api/Ticket/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CEC_CRM.Controllers.TicketController",
+    "Method": "editTicket",
+    "RelativePath": "api/Ticket/edit/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "UpdatedTicket",
+        "Type": "CEC_CRM.Controllers.TicketController\u002BUticket",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CEC_CRM.Controllers.TicketController",
     "Method": "ForwardTicket",
     "RelativePath": "api/Ticket/forward-ticket/{ticket_id}",
     "HttpMethod": "PUT",
@@ -197,6 +334,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CEC_CRM.Controllers.TicketController",
+    "Method": "GetTicketImageBase64",
+    "RelativePath": "api/Ticket/getImageBase64",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticketId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -269,6 +422,52 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CEC_CRM.Controllers.TicketController",
+    "Method": "UploadTicketImage",
+    "RelativePath": "api/Ticket/uploadImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ticketId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CEC_CRM.Controllers.UserController",
     "Method": "AddUser",
     "RelativePath": "api/User",
@@ -326,6 +525,38 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CEC_CRM.Controllers.UserController",
+    "Method": "getUserDetails",
+    "RelativePath": "api/User/{userid}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userid",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CEC_CRM.Controllers.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/User/ChangePassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CEC_CRM.Controllers.ChangePasswordRequest",
         "IsRequired": true
       }
     ],

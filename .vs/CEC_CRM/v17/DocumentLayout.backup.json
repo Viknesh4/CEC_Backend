@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\cec_crm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\cec_crm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\models\\ticketupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\models\\ticketupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\suggestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\suggestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\models\\admincategoryupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\models\\admincategoryupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,106 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CEC_CRM",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\CEC_CRM.csproj",
-              "RelativeDocumentMoniker": "CEC_CRM\\CEC_CRM.csproj",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\CEC_CRM.csproj",
-              "RelativeToolTip": "CEC_CRM\\CEC_CRM.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-12T06:32:48.734Z",
+              "DocumentIndex": 2,
+              "Title": "SuggestionController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\SuggestionController.cs",
+              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\SuggestionController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\SuggestionController.cs",
+              "RelativeToolTip": "CEC_CRM\\Controllers\\SuggestionController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAuwEgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T04:29:33.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmailController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\EmailController.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\EmailController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\EmailController.cs*",
-              "RelativeToolTip": "CEC_CRM\\Controllers\\EmailController.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBsAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T06:31:34.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminCategoryUpdateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\models\\AdminCategoryUpdateRequest.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\models\\AdminCategoryUpdateRequest.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\models\\AdminCategoryUpdateRequest.cs",
-              "RelativeToolTip": "CEC_CRM\\models\\AdminCategoryUpdateRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T16:54:12.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TicketUpdateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\models\\TicketUpdateRequest.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\models\\TicketUpdateRequest.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\models\\TicketUpdateRequest.cs",
-              "RelativeToolTip": "CEC_CRM\\models\\TicketUpdateRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T16:52:08.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\models\\Ticket.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\models\\Ticket.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\models\\Ticket.cs",
-              "RelativeToolTip": "CEC_CRM\\models\\Ticket.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAIBQwBIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T14:57:24.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TicketController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\TicketController.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\TicketController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\TicketController.cs",
-              "RelativeToolTip": "CEC_CRM\\Controllers\\TicketController.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAgwJEAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T18:04:53.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\UserController.cs",
               "RelativeToolTip": "CEC_CRM\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAA7wD0AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAADwv60AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T17:25:43.765Z",
+              "WhenOpened": "2024-12-19T08:04:32.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "CEC_CRM\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAIwIIAAAATAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TicketController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\TicketController.cs",
+              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\TicketController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\TicketController.cs",
+              "RelativeToolTip": "CEC_CRM\\Controllers\\TicketController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAwwGUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T17:20:35.685Z",
+              "WhenOpened": "2024-12-15T16:54:17.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "CEC_CRM\\models\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\models\\OrderDetail.cs",
+              "RelativeToolTip": "CEC_CRM\\models\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T15:23:40.054Z",
               "EditorCaption": ""
             }
           ]

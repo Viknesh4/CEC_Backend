@@ -2,6 +2,8 @@
 using CEC_CRM.models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
+using Microsoft.Identity.Client;
 
 
 namespace CEC_CRM.Controllers
@@ -37,7 +39,7 @@ namespace CEC_CRM.Controllers
             await dbc.SaveChangesAsync();
 
             // Return the saved query with HTTP 201 status code
-            return Ok();
+            return Ok(new { ticket_id = ticket1.ticket_id });
         }
 
         [HttpGet("{customerId}")]
@@ -87,7 +89,7 @@ namespace CEC_CRM.Controllers
         [HttpGet("GetAlltickets")]
         public async Task<IActionResult> GetAllTickets()
         {
-            var tickets = await dbc.ticket.ToListAsync();
+            var tickets = await dbc.ticket.OrderBy(t => t.priority).ToListAsync();
             return Ok(tickets);
         }
 
@@ -96,6 +98,7 @@ namespace CEC_CRM.Controllers
         {
             var inProgressTickets = await dbc.ticket
                 .Where(t => t.status == "in_progress" && t.assigned_admin_id ==admin_id)
+                .OrderBy(t => t.priority)
                 .ToListAsync();
 
             return Ok(inProgressTickets);
@@ -132,6 +135,7 @@ namespace CEC_CRM.Controllers
         {
             var ResolvedTickets = await dbc.ticket
                 .Where(t => t.status == "resolved" && t.assigned_admin_id == admin_id)
+                .OrderByDescending(t => t.updated_at)
                 .ToListAsync();
 
             return Ok(ResolvedTickets);
@@ -164,5 +168,122 @@ namespace CEC_CRM.Controllers
             }
         }
 
+        [HttpPost("uploadImage")]
+        public async Task<IActionResult> UploadTicketImage([FromForm] IFormFile file, [FromForm] int ticketId)
+        {
+            if (file == null || file.Length == 0)
+            {
+                return BadRequest(new { message = "No file uploaded." });
+            }
+
+            if (ticketId <= 0)
+            {
+                return BadRequest(new { message = "Invalid TicketId." });
+            }
+
+            try
+            {
+                // Convert the uploaded file into a byte array
+                byte[] imageData;
+                using (var memoryStream = new MemoryStream())
+                {
+                    await file.CopyToAsync(memoryStream);
+                    imageData = memoryStream.ToArray();
+                }
+
+                // Create a new Image entity and set its properties
+                var image = new Images
+                {
+                    TicketId = ticketId,
+                    ImageData = imageData
+                };
+
+                // Add the image to the database and save changes
+                dbc.Images.Add(image);
+                await dbc.SaveChangesAsync();
+
+                return Ok(new { message = "Image uploaded successfully." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred.", error = ex.Message });
+            }
+        }
+
+        [HttpGet("getImageBase64")]
+        public async Task<IActionResult> GetTicketImageBase64(int ticketId)
+        {
+            if (ticketId <= 0)
+            {
+                return BadRequest(new { message = "Invalid TicketId." });
+            }
+
+            try
+            {
+                // Fetch the image record associated with the ticketId
+                var image = await dbc.Images.FirstOrDefaultAsync(i => i.TicketId == ticketId);
+
+                if (image == null)
+                {
+                    return NotFound(new { message = "Image not found for the given TicketId." });
+                }
+
+                // Convert the image data to a Base64 string
+                var base64Image = Convert.ToBase64String(image.ImageData);
+
+                // Return the Base64 string as JSON
+                return Ok(new { base64Image });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while retrieving the image.", error = ex.Message });
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> EditTicket(int id)
+        {
+            try
+            {
+                var ticket = await dbc.ticket.FindAsync(id);
+                if (ticket == null)
+                {
+                    return NotFound("Ticket Not found");
+                }
+                dbc.ticket.Remove(ticket);
+                await dbc.SaveChangesAsync();
+                return Ok("Ticket deleted Successfully");
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Error while deleting the ticket");
+            }
+        }
+        [HttpPut("edit/{id}")]
+        public async Task<IActionResult> editTicket(int id, [FromBody] Uticket UpdatedTicket)
+        {
+            try
+            {
+                var exticket = await dbc.ticket.FindAsync(id);
+                if (exticket == null)
+                {
+                    return NotFound("Ticket not Found");
+                }
+                exticket.description = UpdatedTicket.description;
+                exticket.updated_at = UpdatedTicket.updated_at;
+                await dbc.SaveChangesAsync();
+                return Ok("Ticket edited Successfully");
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(500, "Error while editing the ticket");
+            }
+        }
+        public class Uticket
+        {
+            public string? description { get; set; } // Query description
+
+            public DateTime updated_at { get; set; } = DateTime.Now;
+        }
     }
 }

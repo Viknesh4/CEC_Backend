@@ -100,6 +100,7 @@ namespace CEC_CRM.Controllers
             // Save changes to the database
             try
             {
+                dbc.Users.Update(existingUser);
                 await dbc.SaveChangesAsync();
             }
             catch (DbUpdateException ex)
@@ -132,6 +133,54 @@ namespace CEC_CRM.Controllers
                 return StatusCode(500, new { message = "An error occurred while deleting the user. Please try again." });
             }
         }
+        [HttpGet("{userid}")]
+        public async Task<IActionResult> getUserDetails(int userid)
+        {
+            try
+            {
+                var user = await dbc.Users.FindAsync(userid);
+                if (user == null)
+                {
+                    return NotFound(new { message = "User not found." }); // 404 Not Found
+                }
+                return Ok(user); // 200 OK
+            }
+            catch (Exception ex)
+            {
+                // Return a proper error status code and message
+                return StatusCode(500, new { message = "An error occurred while deleting the user. Please try again." });
+            }
+        }
 
+        [HttpPut("ChangePassword")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordRequest request)
+        {
+            var user = await dbc.Users.FindAsync(request.UserId);
+            if (user == null)
+            {
+                return NotFound(new { message = "User not found." });
+            }
+
+            if (user.password != request.CurrentPassword)
+            {
+                return BadRequest(new { message = "Current password is incorrect." });
+            }
+
+            // Update the password
+            user.password = request.NewPassword;
+
+            // Save changes
+            await dbc.SaveChangesAsync();
+
+            return Ok(new { message = "Password changed successfully." });
+        }
     }
+
+    public class ChangePasswordRequest
+    {
+        public int UserId { get; set; }
+        public string CurrentPassword { get; set; }
+        public string NewPassword { get; set; }
+    }
+
 }

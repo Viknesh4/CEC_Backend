@@ -1,5 +1,6 @@
 
 using CEC_CRM.Data;
+using CEC_CRM.hubs;
 using Microsoft.EntityFrameworkCore;
 
 namespace CEC_CRM
@@ -34,7 +35,6 @@ namespace CEC_CRM
             app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
