@@ -1,6 +1,5 @@
 
 using CEC_CRM.Data;
-using CEC_CRM.hubs;
 using Microsoft.EntityFrameworkCore;
 
 namespace CEC_CRM
