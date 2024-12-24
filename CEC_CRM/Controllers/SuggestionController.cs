@@ -4,6 +4,7 @@ using MailKit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Diagnostics.Eventing.Reader;
 using System.Runtime.InteropServices;
 
 namespace CEC_CRM.Controllers
@@ -25,6 +26,30 @@ namespace CEC_CRM.Controllers
             var nsuggestion = await dbc.suggestions.ToListAsync();
             return Ok(nsuggestion);
         }
+
+        [HttpGet("getbyid/{id}")]
+        public async Task<IActionResult> GetAllSuggestionbyID(int id)
+        {
+            try
+            {
+                var nsuggestions = await dbc.suggestions
+                    .Where(s => s.user_id == id)
+                    .ToListAsync();
+
+                if (nsuggestions == null || !nsuggestions.Any())
+                {
+                    return NotFound(new { message = "No suggestions found for the provided user ID." });
+                }
+
+                return Ok(new { suggestions = nsuggestions });
+            }
+            catch (Exception ex)
+            {
+                // Log the exception internally (e.g., using a logging framework)
+                return StatusCode(500, new { message = "An error occurred while fetching suggestions." });
+            }
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> AddSuggestion(Suggestion suggestion)
@@ -75,19 +100,28 @@ namespace CEC_CRM.Controllers
         {
             try
             {
-                var suggesstion = await dbc.suggestions.FindAsync(id);
-                if (suggesstion == null)
+                // Find the suggestion by ID
+                var suggestion = await dbc.suggestions.FindAsync(id);
+
+                // Check if the suggestion exists
+                if (suggestion == null)
                 {
-                    return NotFound(new { message = "Suggestion not found" });
+                    return NotFound(new { message = $"Suggestion with ID {id} not found." });
                 }
-                dbc.suggestions.Remove(suggesstion);
+
+                // Remove the suggestion
+                dbc.suggestions.Remove(suggestion);
                 await dbc.SaveChangesAsync();
-                return Ok("suggestion deleted Successfully");
+
+                // Return a structured success response
+                return Ok(new { message = "Suggestion deleted successfully.", suggestionId = id });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                return StatusCode(500, "Error while deleting the suggestion");
+                // Log the exception (not shown here, but could use a logging framework)
+                return StatusCode(500, new { message = "An error occurred while deleting the suggestion.", error = ex.Message });
             }
         }
+
     }
 }

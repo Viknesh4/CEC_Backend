@@ -86,6 +86,7 @@ namespace CEC_CRM.Controllers
                 return BadRequest(ModelState);
             }
 
+
             var existingUser = await dbc.Users.FindAsync(id);
             if (existingUser == null)
             {
@@ -94,7 +95,6 @@ namespace CEC_CRM.Controllers
 
             // Update user details
             existingUser.name = updatedUser.name;
-            existingUser.email = updatedUser.email;
             existingUser.phone_number = updatedUser.phone_number;
 
             // Save changes to the database

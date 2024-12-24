@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CEC_CRM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c9cc204e8b70da0eaddad7f54316b79c760b844")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90fc1ad6d29d39b90581940ca1529dc70004b702")]
 [assembly: System.Reflection.AssemblyProductAttribute("CEC_CRM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CEC_CRM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

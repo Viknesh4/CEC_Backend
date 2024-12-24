@@ -79,53 +79,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CEC_CRM.Controllers.DiscussionsController",
-    "Method": "GetDiscussions",
-    "RelativePath": "api/Discussions",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CEC_CRM.Controllers.DiscussionsController",
-    "Method": "AddDiscussion",
-    "RelativePath": "api/Discussions",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "discussion",
-        "Type": "CEC_CRM.Data.Discussion",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CEC_CRM.Controllers.DiscussionsController",
-    "Method": "AddReply",
-    "RelativePath": "api/Discussions/{discussionId}/reply",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "discussionId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "reply",
-        "Type": "CEC_CRM.Data.Reply",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "CEC_CRM.Controllers.EmailController",
     "Method": "SendEmail",
     "RelativePath": "api/Email/send",
@@ -225,6 +178,22 @@
     "Method": "deleteSuggestion",
     "RelativePath": "api/Suggestion/{id}",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CEC_CRM.Controllers.SuggestionController",
+    "Method": "GetAllSuggestionbyID",
+    "RelativePath": "api/Suggestion/getbyid/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [

@@ -57,6 +57,6 @@ namespace CEC_CRM.Controllers
             {
                 return StatusCode(500, new { message = "Error D+Fetching the order details.", error = ex.Message });
             }
-        }
+        } 
     }
 }
