@@ -206,6 +206,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CEC_CRM.Controllers.SuperAdminController",
+    "Method": "Superlogin",
+    "RelativePath": "api/SuperAdmin/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CEC_CRM.Controllers.Loginrr",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CEC_CRM.Controllers.TicketController",
     "Method": "SaveTicket",
     "RelativePath": "api/Ticket",

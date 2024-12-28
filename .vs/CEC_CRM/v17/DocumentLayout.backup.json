@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\superadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\superadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\suggestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\suggestioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|c:\\users\\hp\\source\\repos\\cec_crm\\cec_crm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{757D1032-1705-492E-A082-F9E71945FD6F}|CEC_CRM\\CEC_CRM.csproj|solutionrelative:cec_crm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,89 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\OrderController.cs*",
-              "RelativeToolTip": "CEC_CRM\\Controllers\\OrderController.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwD0AAAAEAAAAAAAAAA==",
+              "Title": "SuperAdminController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\SuperAdminController.cs",
+              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\SuperAdminController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\SuperAdminController.cs",
+              "RelativeToolTip": "CEC_CRM\\Controllers\\SuperAdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T16:33:02.082Z",
+              "WhenOpened": "2024-12-28T03:01:22.359Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Program.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\Program.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Program.cs",
-              "RelativeToolTip": "CEC_CRM\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwCcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T06:21:44.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Data\\DataContext.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\Data\\DataContext.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Data\\DataContext.cs",
-              "RelativeToolTip": "CEC_CRM\\Data\\DataContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T06:21:20.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SuggestionController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\SuggestionController.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\SuggestionController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\SuggestionController.cs",
-              "RelativeToolTip": "CEC_CRM\\Controllers\\SuggestionController.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAUwF8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T04:29:33.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\UserController.cs",
-              "RelativeToolTip": "CEC_CRM\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwGAAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T08:04:32.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TicketController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\TicketController.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\TicketController.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\TicketController.cs",
-              "RelativeToolTip": "CEC_CRM\\Controllers\\TicketController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwGUAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T16:54:17.371Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "CEC_CRM\\models\\OrderDetail.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\models\\OrderDetail.cs*",
-              "RelativeToolTip": "CEC_CRM\\models\\OrderDetail.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "CEC_CRM\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "CEC_CRM\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T15:23:40.054Z",
+              "WhenOpened": "2024-12-27T17:21:10.091Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\appsettings.json",
+              "RelativeDocumentMoniker": "CEC_CRM\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\CEC_CRM\\CEC_CRM\\appsettings.json",
+              "RelativeToolTip": "CEC_CRM\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-27T13:20:16.974Z"
             }
           ]
         }

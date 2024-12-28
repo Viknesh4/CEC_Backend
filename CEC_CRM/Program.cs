@@ -1,4 +1,3 @@
-
 using CEC_CRM.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,14 +10,24 @@ namespace CEC_CRM
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            // Configure DbContext with SQL Server connection string
             builder.Services.AddDbContext<DataContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            // Enable CORS for the entire API
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder => builder.AllowAnyOrigin()  // Allow any origin
+                                      .AllowAnyMethod()  // Allow any method (GET, POST, etc.)
+                                      .AllowAnyHeader());  // Allow any header
+            });
 
             var app = builder.Build();
 
@@ -31,7 +40,8 @@ namespace CEC_CRM
 
             app.UseHttpsRedirection();
 
-            app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+            // Use CORS policy for allowing any origin, method, and header
+            app.UseCors("AllowAllOrigins");
 
             app.UseAuthorization();
 

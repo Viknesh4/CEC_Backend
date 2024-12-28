@@ -9,7 +9,7 @@ namespace CEC_CRM.Controllers
     [ApiController]
     [Route("api/[controller]")]
     public class AdminController : Controller
-    { 
+    {
         private readonly DataContext dbc;
 
         public AdminController(DataContext dbc)
@@ -145,4 +145,6 @@ namespace CEC_CRM.Controllers
         }
 
     }
+
 }
+

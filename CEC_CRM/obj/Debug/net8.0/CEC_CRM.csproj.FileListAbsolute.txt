@@ -174,3 +174,8 @@ C:\Users\hp\source\repos\CEC_CRM\CEC_CRM\bin\Debug\net8.0\System.Security.Crypto
 C:\Users\hp\source\repos\CEC_CRM\CEC_CRM\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\hp\source\repos\CEC_CRM\CEC_CRM\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\hp\source\repos\CEC_CRM\CEC_CRM\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\hp\source\repos\CEC_CRM\CEC_CRM\bin\Debug\net8.0\System.Web.Cors.dll
+C:\Users\hp\source\repos\CEC_CRM\CEC_CRM\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Users\hp\source\repos\CEC_CRM\CEC_CRM\bin\Debug\net8.0\System.Web.Http.dll
+C:\Users\hp\source\repos\CEC_CRM\CEC_CRM\bin\Debug\net8.0\System.Web.Http.Cors.dll
+C:\Users\hp\source\repos\CEC_CRM\CEC_CRM\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
